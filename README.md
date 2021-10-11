@@ -39,4 +39,4 @@ OPEN_WEATHER_API_KEY=<your_api_key>
 ```
 👉 Open the project and install the dependancies via `pubspec.yaml`
 
-✅ You're done! You can now run the app.
+🎉 You're done! You can now run the app.
