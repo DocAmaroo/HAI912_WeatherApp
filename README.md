@@ -8,7 +8,7 @@
 
 🎓 **CANTA** Thomas  
 📧 thomas.canta@etu.umontpellier.fr  
-🏷️ N° Étudiant: 21607288  
+🏷️ N° Étudiant: 21607288
 
 A new Flutter project.
 
