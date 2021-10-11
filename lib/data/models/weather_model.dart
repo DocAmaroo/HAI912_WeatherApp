@@ -1,4 +1,5 @@
 import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 class WeatherForecastModel {
   String? cod;
@@ -88,7 +89,8 @@ class Liste {
 
   String get formatedDate {
     DateTime parseDate = DateTime.fromMillisecondsSinceEpoch(dt! * 1000);
-    return DateFormat.EEEE().format(parseDate);
+    initializeDateFormatting();
+    return DateFormat.EEEE('fr_FR').format(parseDate);
   }
 }
 
