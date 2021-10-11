@@ -38,7 +38,9 @@ class ForecastCardWidget extends StatelessWidget {
   }
 
   Text _getDate() {
-    return Text(_liste.formatedDate,
+    String date =
+        _liste.formatedDate[0].toUpperCase() + _liste.formatedDate.substring(1);
+    return Text(date,
         style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500));
   }
 

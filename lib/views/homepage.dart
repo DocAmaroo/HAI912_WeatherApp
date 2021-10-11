@@ -62,8 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Wrap _getLoadedContent(LoadedWeatherState state) {
     return Wrap(runSpacing: 20, children: [
       _getTitle('Météo actuelle'),
-      CurrentConditions(
-          state.weather.city!.name.toString(), state.weather.list![0]),
+      CurrentConditions(state.weather.city!.name.toString(),
+          state.weather.city!.country.toString(), state.weather.list![0]),
       _getTitle('Prévision 5 jours'),
       ForecastHorizontalListWidget(state.weather)
     ]);

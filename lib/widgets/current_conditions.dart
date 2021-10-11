@@ -7,9 +7,11 @@ import 'spacer_widget.dart';
 
 class CurrentConditions extends StatelessWidget {
   final String _cityName;
+  final String _cityCountry;
   final Liste _liste;
 
-  const CurrentConditions(this._cityName, this._liste, {Key? key})
+  const CurrentConditions(this._cityName, this._cityCountry, this._liste,
+      {Key? key})
       : super(key: key);
 
   @override
@@ -44,7 +46,7 @@ class CurrentConditions extends StatelessWidget {
   }
 
   Text _getCityName() {
-    return Text(_cityName,
+    return Text("$_cityName, $_cityCountry",
         style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w500));
   }
 
